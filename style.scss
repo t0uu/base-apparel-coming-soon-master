@@ -1,0 +1,155 @@
+// ## Colors
+
+:root{
+    // ### Primary
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    // ### Neutral
+    --Dark-Grayish-Red: hsl(0, 6%, 24%)
+    // ### Gradients
+    // -Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+    // - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+}
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+// Media Mobile
+@media(min-width: 375px){
+    .LogoMobile{
+        margin: 1rem;
+        height: auto;
+        width: 100px;
+    }
+    .LogoDesktop{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    main{
+        h1{
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 32px;
+            margin: 2rem;
+            letter-spacing: 10px;
+            text-align: center;
+            span{
+                font-weight: 300;
+                font-size: 32px;
+                color: var(--Desaturated-Red);
+            }
+        }
+        p{
+            color: var(--Desaturated-Red);
+            margin: 1rem;
+            line-height: 20px;
+            font-weight: 400;
+            text-align: center;
+        }
+        form{
+            label{
+                margin-left: 40px;
+                input{
+                    align-items: center;
+                    padding: 0.7rem;
+                    width: 210px;
+                    border-color: hsl(0, 80%, 86%);
+                    border-style: solid;
+                    border-radius: 20px;
+                    margin: auto ;
+                }
+                .btn{
+                    cursor: pointer;
+                    position: relative;
+                    padding: 0.5rem;
+                    background-image: linear-gradient(to left, hsl(0, 0%, 100%) -1%,  hsl(0, 100%, 98%) 0%,  hsl(0, 80%, 86%) 10%, hsl(0, 74%, 74%) 53%);
+                    border-radius: 20px;
+                    border: none;
+                    height: 40px;
+                    width: 60px;
+                    top: 5px;
+                    right: 60px;
+                &:hover{
+                    background-image: linear-gradient(to left, hsl(0, 0%, 100%) -1%,  hsl(0, 100%, 98%) 0%,  hsl(0, 80%, 86%) 10%, hsl(0, 74%, 74%) 53%);
+                    transform:scale(1.1);
+                }
+                }
+                .error{
+                    border-color: var(--Soft-Red);
+                }
+                .IconError{
+                    position:relative;
+                    top: 8px;
+                    right:60px;
+                    width: 20px;
+                    height: 20px;
+                    visibility: hidden;
+                }
+                .movesmall{
+                    text-align: center;
+                    margin-right:  80px;
+                    visibility:hidden;
+                    small{
+                        text-align: center;
+                    color: var(--Soft-Red);
+                    font-size: 12px;
+                }
+             }
+            }
+        }
+    }
+    footer{
+        margin: 1rem;
+    }
+}
+@media(min-width:1366px){
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .LogoDesktop{
+        display: block;
+        margin: 2rem;
+    }
+    .LogoMobile{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        h1{
+            font-size: 46px;
+            text-align: left;
+            margin: 1rem;
+            span{
+                font-size: 46px;
+            }
+        }
+        p{
+            margin: 0;
+            text-align: left;
+            line-height: 25px;
+            margin-bottom: 2rem;
+        }
+        form{
+            label{
+                input{
+                    width: 250px;
+                }
+            }
+        }
+    }
+    .container{
+        margin: 10rem;
+    }
+}

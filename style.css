@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%)
+    // ### Gradients
+    // -Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+    // - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+@media (min-width: 375px) {
+  .LogoMobile {
+    margin: 1rem;
+    height: auto;
+    width: 100px;
+  }
+  .LogoDesktop {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  main h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin: 2rem;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+  main h1 span {
+    font-weight: 300;
+    font-size: 32px;
+    color: var(--Desaturated-Red);
+  }
+  main p {
+    color: var(--Desaturated-Red);
+    margin: 1rem;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+  main form label {
+    margin-left: 40px;
+  }
+  main form label input {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.7rem;
+    width: 210px;
+    border-color: #f8bfbf;
+    border-style: solid;
+    border-radius: 20px;
+    margin: auto;
+  }
+  main form label .btn {
+    cursor: pointer;
+    position: relative;
+    padding: 0.5rem;
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(-1%, white), color-stop(0%, #fff5f5), color-stop(10%, #f8bfbf), color-stop(53%, #ee8c8c));
+    background-image: linear-gradient(to left, white -1%, #fff5f5 0%, #f8bfbf 10%, #ee8c8c 53%);
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    width: 60px;
+    top: 5px;
+    right: 60px;
+  }
+  main form label .btn:hover {
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(-1%, white), color-stop(0%, #fff5f5), color-stop(10%, #f8bfbf), color-stop(53%, #ee8c8c));
+    background-image: linear-gradient(to left, white -1%, #fff5f5 0%, #f8bfbf 10%, #ee8c8c 53%);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  main form label .error {
+    border-color: var(--Soft-Red);
+  }
+  main form label .IconError {
+    position: relative;
+    top: 8px;
+    right: 60px;
+    width: 20px;
+    height: 20px;
+    visibility: hidden;
+  }
+  main form label .movesmall {
+    text-align: center;
+    margin-right: 80px;
+    visibility: hidden;
+  }
+  main form label .movesmall small {
+    text-align: center;
+    color: var(--Soft-Red);
+    font-size: 12px;
+  }
+  footer {
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .LogoDesktop {
+    display: block;
+    margin: 2rem;
+  }
+  .LogoMobile {
+    display: none;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  main h1 {
+    font-size: 46px;
+    text-align: left;
+    margin: 1rem;
+  }
+  main h1 span {
+    font-size: 46px;
+  }
+  main p {
+    margin: 0;
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 2rem;
+  }
+  main form label input {
+    width: 250px;
+  }
+  .container {
+    margin: 10rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
