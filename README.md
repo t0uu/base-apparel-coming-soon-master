@@ -1,3 +1,5 @@
+#ATTENTION MEDIA ONLY 1366px AND 375px
+
 # Frontend Mentor - Base Apparel coming soon page
 
 ![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)
